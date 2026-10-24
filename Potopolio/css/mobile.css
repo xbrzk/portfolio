@@ -1,0 +1,36 @@
+/* ===== HERO HP: teks kiri, kartu ID kanan ===== */
+.hero { padding: 105px 16px 40px; }
+.hero-grid { grid-template-columns: 1.2fr 0.8fr; gap: 6px; }
+.hero h1 { font-size: 1.6rem; }
+.hero h2 { font-size: 0.95rem; margin: 8px 0 10px; min-height: 1.4rem; }
+.kursor { height: 1rem; }
+.hero .deskripsi { font-size: 0.72rem; line-height: 1.6; }
+.tombol-grup { gap: 8px; margin-top: 16px; }
+.tombol { padding: 9px 14px; font-size: 0.72rem; border-radius: 8px; }
+.connect { margin: 22px 0 8px; font-size: 0.65rem; }
+.sosial { gap: 8px; }
+.sosial a { width: 34px; height: 34px; font-size: 1rem; border-radius: 8px; }
+
+/* kartu ID mengecil */
+.lanyard-stage { --cw: 130px; height: 340px; }
+.lanyard-hint { top: 290px; font-size: 0.55rem; letter-spacing: 1px; }
+.lanyard-face { border-width: 3px; border-radius: 12px; }
+.lanyard-caption strong { font-size: 14px; }
+.lanyard-caption span { font-size: 8px; }
+.lanyard-back { padding: 10px 8px; gap: 6px; }
+.lanyard-back strong { font-size: 10px; }
+.lanyard-info { font-size: 8.5px; gap: 6px; }
+.lanyard-info i { width: 12px; }
+.holo-logo { --w: 48px; }
+
+/* ===== HP KECIL (maks 480px) ===== */
+@media (max-width: 480px) {
+    .about, .experience, .tech, .projects, .contacts { padding: 70px 20px; }
+    .judul-seksi { font-size: 1.8rem; margin-bottom: 40px; }
+    .marquee { padding: 30px 0; }
+    .marquee-isi span { font-size: 2rem; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .tech-kartu { gap: 10px; }
+    .ai-btn { right: 16px; bottom: 16px; }
+    .ai-panel { right: 16px; bottom: 90px; height: min(420px, 65vh); }
+}

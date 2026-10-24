@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO — Rizki</title>
+    <meta name="description" content="Portfolio Muhammad Rizky Anjani — Frontend Web Developer yang berfokus pada tampilan modern, responsif, dan pengalaman pengguna yang intuitif.">
+    <meta property="og:title" content="Portfolio — Rizki">
+    <meta property="og:description" content="Frontend Web Developer | HTML, CSS, JavaScript">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="img/favicon.png?v=2">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tablet.css" media="(max-width: 800px)">
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 600px)">
+</head>
+<body>
+
+    <div id="loader">
+        <div class="loader-content">
+            <h1 class="loader-logo">Xbrzki</h1>
+            <p class="loader-text">PORTFOLIO LOADING</p>
+            <div class="loader-bar"><div class="loader-fill"></div></div>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <div class="nav-pill">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logo Rizki">
+                </a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+
+            <button id="tema" class="tema-btn" aria-label="Ganti tema">☀</button>
+            <button id="hamburger" class="hamburger" aria-label="Menu navigasi">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+        <div class="hero-grid">
+
+            <div class="hero-teks">
+                <h1 class="muncul">Hi, I'm <span class="nama">Rizky</span></h1>
+                <h2 class="muncul delay-1"><span id="ketik"></span><span class="kursor"></span></h2>
+                <p class="deskripsi muncul delay-2">
+                     Ide di kepala, jadi halaman di layar. Saya suka membangun tampilan yang
+                     rapi, cepat, dan enak dipakai, lalu mengubahnya jadi sesuatu yang bisa
+                     dilihat dan dirasakan.
+                </p>
+
+                <div class="tombol-grup muncul delay-3">
+                    <a href="#projects" class="tombol">Explore Work →</a>
+                    <a href="#" class="tombol tombol-putih">Download CV ⭳</a>
+                </div>
+
+                <p class="connect muncul delay-3">CONNECT</p>
+                <div class="sosial muncul delay-3">
+                    <a href="https://wa.me/62895408104500" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.tiktok.com/@labs" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/xb.rzki" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-foto muncul delay-2">
+
+                <!-- ===== KARTU ID GANTUNG (tarik, ayun, klik untuk membalik) ===== -->
+                <div class="lanyard-stage" id="lanyard">
+                    <canvas class="lanyard-canvas" id="lanyardCanvas"></canvas>
+
+                    <div class="lanyard-card" id="lanyardCard">
+                        <span class="lanyard-clip"></span>
+                        <div class="lanyard-flip">
+                            <!-- sisi depan -->
+                            <div class="lanyard-face lanyard-front">
+                                <img src="img/foto.png" alt="Rizky" draggable="false">
+                                <div class="lanyard-caption">
+                                    <strong>Rizky</strong>
+                                    <span>Universitas Terbuka</span>
+                                </div>
+                            </div>
+                            <!-- sisi belakang -->
+                            <div class="lanyard-face lanyard-back">
+                                <div class="holo-logo"><span><img src="img/logo.png" alt="Logo Rizki" draggable="false"></span></div>
+                                <strong>Muhammad Rizky Anjani</strong>
+                                <ul class="lanyard-info">
+                                    <li><i class="fa-solid fa-graduation-cap"></i>Universitas Terbuka</li>
+                                    <li><i class="fa-solid fa-code"></i>HTML, CSS, JavaScript</li>
+                                    <li><i class="fa-solid fa-location-dot"></i>Jambi, Indonesia</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="lanyard-hint">TARIK • KLIK UNTUK MEMBALIK</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+        <p class="kecil">DISCOVER</p>
+        <h2 class="judul-seksi">About Me</h2>
+
+        <div class="about-grid">
+            <div class="about-foto muncul">
+                <img src="img/foto.png" alt="Foto Rizki" loading="lazy">
+            </div>
+
+            <div class="about-isi">
+                <div class="dua-kolom">
+                    <div class="muncul delay-1">
+                        <h3>Who Am I</h3>
+                        <p>Saya seorang web developer pemula yang berfokus pada menciptakan tampilan dan pengalaman pengguna yang sederhana, cepat, dan fungsional.</p>
+                    </div>
+                    <div class="muncul delay-2">
+                        <h3>My Approach</h3>
+                        <p>Saya mengutamakan clean code, desain responsif, dan pengalaman pengguna yang intuitif dalam setiap proyek yang saya kerjakan.</p>
+                    </div>
+                </div>
+
+                <h3 class="detail-judul muncul">Personal Details</h3>
+                <div class="detail-grid muncul delay-1">
+                    <div><span>NAME</span><strong>Muhammad Rizky Anjani</strong></div>
+                    <div><span>PLACE OF BIRTH</span><strong>Jambi, Kota Jambi</strong></div>
+                    <div><span>PHONE</span><strong>0895408104500</strong></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TEKS BERJALAN (diisi otomatis oleh script.js) ===== -->
+    <section class="marquee">
+        <div class="marquee-baris kanan">
+            <div class="marquee-isi" data-teks="Hello I'm Rizki"></div>
+        </div>
+        <div class="marquee-baris kiri">
+            <div class="marquee-isi" data-teks="Frontend Web Developer"></div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="experience" id="experience">
+        <p class="kecil">CAREER PATH</p>
+        <h2 class="judul-seksi">Work Experience</h2>
+
+        <div class="garis-waktu">
+            <div class="item kanan-item muncul">
+                <div class="titik"></div>
+                <div class="kartu-exp">
+                    <small>2025</small>
+                    <h3>Frontend Developer</h3>
+                    <h4>Proyek Portofolio Pribadi</h4>
+                    <p>Membangun website portofolio dari nol dengan HTML, CSS, dan JavaScript, lengkap dengan animasi, mode terang/gelap, dan tampilan responsif.</p>
+                    <div class="tag-grup">
+                        <span>HTML</span><span>CSS</span><span>JAVASCRIPT</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item kiri-item muncul">
+                <div class="titik"></div>
+                <div class="kartu-exp">
+                    <small>2025 - 2026</small>
+                    <h3>Web Developer</h3>
+                    <h4>Latihan Proyek Website</h4>
+                    <p>Mempelajari dasar pembuatan website, mulai dari struktur halaman, styling, sampai interaksi sederhana dengan JavaScript.</p>
+                    <div class="tag-grup">
+                        <span>HTML</span><span>CSS</span><span>RESPONSIVE</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item kanan-item muncul">
+                <div class="titik"></div>
+                <div class="kartu-exp">
+                    <small>2026</small>
+                    <h3>Pelajar Coding</h3>
+                    <h4>Belajar Mandiri</h4>
+                    <p>Mulai belajar pemrograman web secara mandiri dan terus berlatih membuat proyek kecil setiap hari.</p>
+                    <div class="tag-grup">
+                        <span>VS CODE</span><span>GIT</span><span>GITHUB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TECH STACK ===== -->
+    <section class="tech" id="tech">
+        <p class="kecil">SKILLS &amp; TOOLS</p>
+        <h2 class="judul-seksi">My Tech Stack</h2>
+
+        <div class="tech-baris muncul">
+            <div class="tech-label">
+                <h3>Frontend Languages</h3>
+                <p>Alat yang saya pakai untuk membangun tampilan website yang rapi dan responsif.</p>
+            </div>
+            <div class="tech-kartu">
+                <div><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+                <div><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+                <div><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+                <div><i class="fa-solid fa-mobile-screen"></i><span>Responsive</span></div>
+            </div>
+        </div>
+
+        <div class="tech-baris muncul">
+            <div class="tech-label">
+                <h3>Tools</h3>
+                <p>Perangkat yang membantu saya menulis, menguji, dan mengelola kode.</p>
+            </div>
+            <div class="tech-kartu">
+                <div><i class="fa-solid fa-code"></i><span>VS Code</span></div>
+                <div><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+                <div><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+                <div><i class="fa-solid fa-terminal"></i><span>Terminal</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects" id="projects">
+        <p class="kecil">LATEST WORK</p>
+        <h2 class="judul-seksi">Projects</h2>
+
+        <div class="project-grid">
+            <div class="project-card muncul">
+                <div class="project-icon"><i class="fa-solid fa-globe"></i></div>
+                <h3>Portfolio Website</h3>
+                <p>Website portofolio pribadi dengan dark mode, animasi scroll, typing effect, dan AI chatbot sederhana.</p>
+                <div class="tag-grup">
+                    <span>HTML</span><span>CSS</span><span>JAVASCRIPT</span>
+                </div>
+                <a href="#" class="project-link">Lihat Proyek <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="project-card muncul delay-1">
+                <div class="project-icon"><i class="fa-solid fa-calculator"></i></div>
+                <h3>Kalkulator Web</h3>
+                <p>Kalkulator sederhana dengan tampilan modern dan operasi dasar matematika.</p>
+                <div class="tag-grup">
+                    <span>HTML</span><span>CSS</span><span>JAVASCRIPT</span>
+                </div>
+                <a href="#" class="project-link">Lihat Proyek <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="project-card muncul delay-2">
+                <div class="project-icon"><i class="fa-solid fa-list-check"></i></div>
+                <h3>To-Do List App</h3>
+                <p>Aplikasi pencatatan tugas harian dengan fitur tambah, hapus, dan tandai selesai.</p>
+                <div class="tag-grup">
+                    <span>HTML</span><span>CSS</span><span>JAVASCRIPT</span>
+                </div>
+                <a href="#" class="project-link">Lihat Proyek <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACTS ===== -->
+    <section class="contacts" id="contacts">
+        <p class="kecil">GET IN TOUCH</p>
+        <h2 class="judul-seksi">Contact Me</h2>
+
+        <div class="contact-grid">
+            <div class="contact-card muncul">
+                <i class="fa-solid fa-phone"></i>
+                <h3>Phone</h3>
+                <p>0895408104500</p>
+            </div>
+            <div class="contact-card muncul delay-1">
+                <i class="fa-brands fa-whatsapp"></i>
+                <h3>WhatsApp</h3>
+                <a href="https://wa.me/62895408104500" target="_blank">Chat via WhatsApp</a>
+            </div>
+            <div class="contact-card muncul delay-2">
+                <i class="fa-brands fa-instagram"></i>
+                <h3>Instagram</h3>
+                <a href="https://www.instagram.com/xb.rzki" target="_blank">@xb.rzki</a>
+            </div>
+            <div class="contact-card muncul delay-3">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Location</h3>
+                <p>Jambi, Indonesia</p>
+            </div>
+        </div>
+    </section>
+
+  <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-isi">
+            <div class="footer-logo">
+                <img src="img/favicon.png" alt="Logo Rizky">
+                <p>Frontend Web Developer yang suka ngoding dan bereksperimen.</p>
+            </div>
+            <div class="footer-link">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contacts">Contacts</a>
+            </div>
+            <div class="footer-sosmed">
+                <h4>Social Media</h4>
+                <div class="sosial">
+                    <a href="https://wa.me/62895408104500" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.tiktok.com/@labs" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/xb.rzki" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bawah">
+            <p>&copy; 2026 Muhammad Rizky Anjani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ===== ASISTEN AI ===== -->
+    <button id="ai-btn" class="ai-btn" aria-label="Buka asisten AI">
+        <i class="fa-regular fa-comment-dots"></i>
+        <span class="ai-badge">AI</span>
+    </button>
+
+    <div id="ai-panel" class="ai-panel">
+        <div class="ai-head">
+            <strong>Asisten Rizki</strong>
+            <button id="ai-tutup" aria-label="Tutup">✕</button>
+        </div>
+        <div id="ai-pesan" class="ai-pesan"></div>
+        <form id="ai-form" class="ai-form">
+            <input id="ai-input" type="text" placeholder="Tanya sesuatu..." autocomplete="off">
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
